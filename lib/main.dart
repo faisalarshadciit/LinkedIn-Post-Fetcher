@@ -79,13 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
         return "Failed to fetch LinkedIn post. Status code: ${response.statusCode}";
       }
-    } catch (e) {
+    } catch (exception) {
       setState(() {
         _isLoading = false;
         _postText = "";
       });
 
-      return "Invalid URL format. Please enter a valid LinkedIn post link. ($e)";
+      return "Invalid URL format. Please enter a valid LinkedIn post link. ($exception)";
     }
   }
 
