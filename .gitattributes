@@ -1,2 +1,9 @@
-*.cmake linguist-detectable=false
-*.c++ linguist-detectable=false
+# Ignore native Android C/C++ files
+android/** linguist-detectable=false
+ios/** linguist-detectable=false
+macos/** linguist-detectable=false
+windows/** linguist-detectable=false
+linux/** linguist-detectable=false
+
+# Force Dart as main language
+* linguist-language=Dart
